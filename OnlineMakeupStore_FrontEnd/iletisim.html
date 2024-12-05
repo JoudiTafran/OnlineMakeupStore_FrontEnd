@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="icon" href="https://i.pinimg.com/564x/f8/34/cc/f834ccc788207ae147ab37d2085f6903.jpg">
+  <title>Contact</title>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    header {
+        background-color: hwb(282 38% 43% / 0.925);
+        color: #fff;
+        text-align: center;
+        padding: 15px;
+    }
+.contactform {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+   
+.input_container label { 
+    display: block;
+    margin-bottom: 8px;
+ }
+   
+.input_container input , textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+input:out-of-range{
+    border: solid 1px red;
+}
+
+input:valid{
+  background-color: rgba(0, 0, 0, 0.062);
+}
+
+button {
+    display: block;
+    width: 100%;
+    background-color: #bb9dcf;
+    color: #fff;
+    padding: 10px 20px;
+    margin-bottom: 13px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.MessageBox{
+  background: rgba(0, 0, 0, 0.889);
+  position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+	   
+.popup{ 
+  position: relative;
+	width: 100%;
+	max-width: 350px;
+	margin: auto;  
+	margin-top: 200px;
+	padding: 40px 30px 35px;
+  text-align: center;
+  color: black;
+	background: white;
+	border:3px solid rgba(0, 0, 0, 0.854);
+  border-radius: 7px;
+}
+	   
+.popup a{
+ background: rgba(0, 0, 0, 0.718);
+ color: white;
+ padding: 7px 11px;
+ text-decoration: none;
+ border-radius:5px ;
+ font-size: 15px;
+}
+	   
+.popup-close{
+ position: absolute;
+ cursor: pointer;
+ top: 4px;
+ right: 7px;
+}
+  </style>
+</head>
+<body class="body">
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+    
+    <nav aria-label="breadcrumb">
+        <ol style="background-color: white" class="breadcrumb">
+            <li class="breadcrumb-item ">
+                <a style="color: rgb(182, 174, 188)" href="Makyaj satis sitesi.html">Home Page</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Contact</li>
+        </ol>
+    </nav>
+
+    <main class="contactform">
+        <form id="form">
+          <div class="input_container">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="input_container">
+            <label for="age">Your age</label>
+            <input type="number" id="age" min="18" required>
+          </div>
+          <div class="input_container">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="input_container">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button>Submit</button>
+       </form>
+    </main>
+
+    <div class="MessageBox">
+        <div class="popup">
+          <div class="popup-close">x</div>
+          <div class="popup-content">
+            <p style="font-size: 20px; margin-bottom: 30px;">Message sent sucssefully</p>
+            <a href="Makyaj satis sitesi.html">Turn to home page</a>
+          </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          var form = document.getElementById("form");
+          var messageBox = document.querySelector(".MessageBox");
+          var popup = document.querySelector(".popup");
+    
+          form.addEventListener("submit", function(event) {
+            event.preventDefault(); 
+            // Validate the form inputs
+            if (validateForm()) {
+              // If the form is valid, show the message box
+              messageBox.style.display = "block";
+              form.reset();
+            }
+          });
+    
+          function validateForm() {
+            var name = document.getElementById("name").value;
+            var age = document.getElementById("age").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+    
+            return true; // Form is valid
+          }
+    
+          // Close the message box when clicked
+          var close =document.querySelector(".popup-close");
+          close.addEventListener('click',()=>{
+            messageBox.style.display='none';
+          },10);
+        });
+      </script>
+
+</body>
+</html>

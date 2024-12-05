@@ -1,0 +1,328 @@
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"> 
+	  <link rel="icon" href="https://i.pinimg.com/564x/f8/34/cc/f834ccc788207ae147ab37d2085f6903.jpg"> 
+      <title>Survey</title>
+	  <style>
+	  header {
+        background-color: hwb(282 38% 43% / 0.925);
+        color: #fff;
+        text-align: center;
+        padding: 15px;
+      }
+	  .questions{
+		max-width: 600px;
+		margin: 20px auto;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		border-radius: 5px;
+	  }
+
+		button{
+		 display: block;
+		 margin: 20px auto;
+		 background-color: hwb(282 38% 43% / 0.925);
+		 color: white;
+		 border: 0;
+         border-radius: 5px;
+		 padding: 6px 10px;
+	   }
+	   button:hover{
+		border: solid 1px black;
+		background-color: #8361918f;
+	   }
+	   
+	   .main-popup{
+		 background-size: cover;
+		 background-position: center;
+		 background-repeat: no-repeat;
+		 position: fixed;
+		 top: 0;
+		 left: 0;
+		 width: 100%;
+		 height: 100%;
+		 display: none;
+	   }
+	   
+	   .popup{  
+		 position: relative;
+		 width: 100%;
+		 max-width: 350px;
+		 margin: auto;  
+		 margin-top: 200px;
+		 padding: 30px;
+		 text-align: center;
+		 color: black;
+		 background: white;
+		 border:3px solid rgba(0, 0, 0, 0.463);
+		 border-radius: 7px;
+	   }
+	   
+	   .popup a{
+		 text-decoration: none;
+		 background: rgba(0, 0, 0, 0.463);
+		 color: white;
+		 padding: 7px;
+         border-radius:5px ;
+		 font-size: 15px;
+	   }
+	   
+	   .popup-close{
+		 position: absolute;
+		 cursor: pointer;
+		 top: 4px;
+		 right: 7px;
+	   }
+	</style>
+</head>
+<body>
+
+    <header>
+      <h1>Survey</h1>
+    </header>
+
+    <nav aria-label="breadcrumb">
+      <ol style="background-color: white" class="breadcrumb">
+          <li class="breadcrumb-item ">
+              <a style="color: rgb(182, 174, 188)" href="Makyaj satis sitesi.html">Home Page</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">Survey</li>
+      </ol>
+    </nav>
+    
+    <div class="container questions">
+					
+			<div class="row">
+				<div class="col-12">
+				 
+				  <form class="Question-form" style="color:black;">
+					<div class="my-4">
+					  <p>Where is the foundation placed?</p>
+					  <div class="form-check">
+						<input class="form-check-input" type="radio" name="q1" value="Y">
+						<label class="form-check-label" >
+							On the face
+						</label>
+					  </div>
+					  <div class="form-check">
+						<input class="form-check-input" type="radio" name="q1"  value="N">
+						<label class="form-check-label">
+						 On the lips
+						</label>
+					  </div>  
+					  <div class="form-check">
+						<input class="form-check-input" type="radio" name="q1"  value="N">
+						<label class="form-check-label">
+						 On the eyebrow
+						</label>
+					   </div> 
+					   <div class="form-check">
+						<input class="form-check-input" type="radio" name="q1"  value="N">
+						<label class="form-check-label">
+						 Under the eyes
+						</label>
+					   </div> 				  
+					</div>
+					<div class="my-4">
+					  <p>Where do we not put contour?</p>
+					  <div class="form-check">
+						<input class="form-check-input" type="radio" name="q2" value="N" >
+						<label class="form-check-label" >
+						 On the hollows of our cheeks
+						</label>
+					  </div>
+					  <div class="form-check">
+						<input class="form-check-input" type="radio" name="q2"  value="Y">
+						<label class="form-check-label">
+							On the eyes
+						</label>
+					  </div>       
+					  <div class="form-check">
+						<input class="form-check-input" type="radio" name="q2"  value="N">
+						<label class="form-check-label">
+						 On the temples
+						</label>
+					  </div> 
+					  <div class="form-check">
+						<input class="form-check-input" type="radio" name="q2"  value="N">
+						<label class="form-check-label">
+						 On the side and tip of our nose
+						</label>
+					  </div> 					  
+					</div>
+					<div class="my-4"> 
+					  <p>Where do we not put tint?</p>
+					  <div class="form-check">
+						<input class="form-check-input" type="radio" name="q3" value="N" >
+						<label class="form-check-label" >
+						 On the cheeks
+						</label>
+					  </div>
+					  <div class="form-check">
+						<input class="form-check-input" type="radio" name="q3"  value="N">
+						<label class="form-check-label">
+						 On the bones
+						</label>
+					  </div>  
+					 <div class="form-check">
+						<input class="form-check-input" type="radio" name="q3"  value="Y">
+						<label class="form-check-label">
+						 On the temples
+						</label>
+					  </div>  
+					  <div class="form-check">
+						<input class="form-check-input" type="radio" name="q3"  value="N">
+						<label class="form-check-label">
+						 On the lips
+						</label>
+					  </div>  					  
+					</div>
+					<div class="my-4">
+					  <p>Where is the eyeshadow placed?</p>
+					  <div class="form-check">
+						<input class="form-check-input" type="radio" name="q4" value="N" >
+						<label class="form-check-label" >
+						 On the lips
+						</label>
+					  </div>
+					  <div class="form-check">
+						<input class="form-check-input" type="radio" name="q4"  value="N">
+						<label class="form-check-label">
+						 On the nose
+						</label>
+					  </div>    
+					  <div class="form-check">
+						<input class="form-check-input" type="radio" name="q4" value="N" >
+						<label class="form-check-label" >
+						 On the cheeks
+						</label>
+					  </div>
+					  <div class="form-check">
+						<input class="form-check-input" type="radio" name="q4"  value="Y">
+						<label class="form-check-label">
+						 Above the eyes
+						</label>
+					  </div>   					  
+					</div>
+					<div class="my-4">
+					  <p>Where do we dont put the highlighter?</p>
+					  <div class="form-check">
+						<input class="form-check-input" type="radio" name="q5" value="N" >
+						<label class="form-check-label" >
+						 On the cheekbones
+						</label>
+					  </div>
+					  <div class="form-check">
+						<input class="form-check-input" type="radio" name="q5"  value="N">
+						<label class="form-check-label">
+						 On the nose
+						</label>
+					  </div>    
+					  <div class="form-check">
+						<input class="form-check-input" type="radio" name="q5" value="N" >
+						<label class="form-check-label" >
+						 On the brow bones
+						</label>
+					  </div>
+					  <div class="form-check">
+						<input class="form-check-input" type="radio" name="q5"  value="Y">
+						<label class="form-check-label">
+						 Under the eyes
+						</label>
+					  </div>   					  
+					</div>
+					<div class="text-center">
+					  <button type="submit">submit</button>
+					</div>	
+					
+				  </form>
+				</div>	
+				
+            </div>
+		</div>
+
+	<div class="main-popup">
+	  <img src="">
+	  <div class="popup">
+		<div class="popup-close">x</div>
+		  <div class="popup-content">
+			<div  class="d-none Result text-center">
+				<div class=" container">
+					<span class="p-3 d-flex justify-content-center" style="height: 5px; font-size: 20px;"></span>
+					<p class="p-3 d-flex justify-content-center" style="height: 5px; font-size: 20px;"></p>
+					<br>
+					<a href="Makyaj satis sitesi.html">Turn to home page</a>
+				</div>
+			</div>
+		  </div>	
+		</div>
+	   </div>
+		
+	</div>
+
+
+    <script>
+const correctAnswers=['Y','Y','Y','Y','Y'];
+const result=document.querySelector('.Result');
+const mainpopup=document.querySelector('.main-popup');
+const popup=document.querySelector('.popup');
+const form=document.querySelector('.Question-form');
+
+form.addEventListener('submit',e=>{
+    e.preventDefault();
+
+    let score=0;
+    const userAnsers=[form.q1.value,form.q2.value,form.q3.value,form.q4.value,form.q5.value];
+	console.log(userAnsers);
+    userAnsers.forEach((answer,index) =>{
+        if(answer === correctAnswers[index])
+        {
+            score +=20;
+        }
+    })
+
+    if(score >= 80)
+    {
+        result.querySelector('p').textContent = `You win the gift`;
+		mainpopup.style.backgroundImage = "url(https://i.pinimg.com/564x/5a/5e/ea/5a5eea380577b7bdafe77b8bdf08ff5e.jpg)";
+    }
+    else
+    {
+        result.querySelector('p').textContent = `Try again`;
+		mainpopup.style.backgroundImage = "url(https://i.pinimg.com/564x/a1/55/ea/a155eac88bee508fb5cf9e289163f817.jpg)";
+    }
+
+    result.classList.remove('d-none');
+    let puan=0;
+    const bastir= setInterval(() => {
+        result.querySelector('span').textContent = `${puan}%`;
+
+        if(puan == score)
+        {
+            clearInterval(bastir);//setintervali durdurmayı salıyor
+        }
+        else
+        {
+            puan++;
+        }
+    }, 10);
+})
+
+const button=document.querySelector('button');
+const mainPopup=document.querySelector('.main-popup');
+const close=document.querySelector('.popup-close');
+
+button.addEventListener('click',()=>{
+    mainPopup.style.display='block';
+})
+
+close.addEventListener('click',()=>{
+    mainPopup.style.display='none';
+	form.reset();
+},10);
+    </script>
+
+   </body>
+</html>

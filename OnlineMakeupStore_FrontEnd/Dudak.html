@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4e627468ad.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="https://i.pinimg.com/564x/f8/34/cc/f834ccc788207ae147ab37d2085f6903.jpg">
+    <title>Lip products</title>
+</head>
+<body>
+
+    <header>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    
+        <h1 class="logo"><i>Beauty</i></h1>
+        
+        <div class="menu" id="menu">
+            <a href="Yuz.html">Facial products</a>
+            <a class="active" href="Dudak.html">Lip products</a>
+            <a href="Goz.html">Eye products</a>
+            <a href="Paletler.html">Paletes</a>
+        </div>
+    
+        <div class="icons">
+            <a href="iletisim.html" class="fa-regular fa-envelope" title="Contact"></a>
+            <a href="Hakkimizda.html" class="fa-solid fa-circle-info" title="About us"></a>
+            <i class="fa-solid fa-cart-shopping" id="cart-icon"></i>
+        </div>
+
+        <div class="cart">
+          <h2 class="cart-title">Shopping cart</h2>
+          <i class="fa-solid fa-xmark" id="close-cart"></i>
+          <div class="cart-content">
+            <!--JS-->
+          </div>
+          <div class="total">
+            <div class="total-item">Total</div>
+            <div class="total-price">$0</div>
+          </div>
+          <button type="button" class="btn-buy">Buy Now</button>
+        </div>
+    </header>
+
+    <div class="menuShow" id="menuShow">
+        <a href="Yuz.html">Facial products</a>
+        <a href="Dudak.html">Lip products</a>
+        <a href="Goz.html">Eye products</a>
+        <a href="Paletler.html">Paletes</a>
+    </div>
+
+    <div class="Buybox">
+        <div class="popup-close">x</div>
+        <main class="paymentform">
+          <form action="" id="form">
+    
+            <div class="row">
+    
+                <div class="col">
+    
+                    <h3 class="title">Address</h3>
+    
+                    <div class="inputBox">
+                        <span>* full name :</span>
+                        <input type="text" placeholder="..." required>
+                    </div>
+                    <div class="inputBox">
+                        <span>* email :</span>
+                        <input type="email" placeholder="example@example.com" required>
+                    </div>
+                    <div class="inputBox">
+                        <span>* address :</span>
+                        <input type="text" placeholder="locality - street - apartment - door" required>
+                    </div>
+                    <div class="flex">
+                      <div class="inputBox">
+                          <span>* state :</span>
+                          <input type="text" placeholder="..." required>
+                      </div>
+                      <div class="inputBox">
+                          <span>* city :</span>
+                          <input type="text" placeholder="..." required>
+                      </div>
+                    </div>
+                      <div class="inputBox">
+                          <span>zip code :</span>
+                          <input type="number" placeholder="xxx xxx">
+                      </div>
+                    
+    
+                </div>
+    
+                <div class="col">
+    
+                    <h3 class="title">payment</h3>
+    
+                    <div class="inputBox">
+                        <span style="margin-bottom: 20px;">Total price :</span>
+                        <div style="margin-bottom: 25px;" class="total-price">$0</div>
+                    </div>
+                    <div class="inputBox">
+                        <span>* name on card :</span>
+                        <input type="text" placeholder="..." required>
+                    </div>
+                    <div class="inputBox">
+                        <span>* credit card number :</span>
+                        <input style="margin-bottom: 10px;" type="number" placeholder="xxxx-xxxx-xxxx-xxxx" required>
+                    </div>
+                    <div class="inputBox">
+                        <span>* exp date :</span>
+                        <input type="number" placeholder="MM/YY" required>
+                    </div>
+                    <div class="inputBox">
+                        <span>* CVV :</span>
+                        <input type="number" placeholder="xxx" min="100" max="999" required> 
+                    </div>
+                </div>
+        
+            </div>
+            <input type="submit" value="Submit payment" class="submit-btn">
+        </form>
+      </main>
+  
+    </div> 
+    
+    <nav aria-label="breadcrumb">
+        <ol style="background-color: white" class="breadcrumb">
+            <li class="breadcrumb-item ">
+                <a style="color: rgb(182, 174, 188)" href="Makyaj satis sitesi.html">Home Page</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Lip Products</li>
+        </ol>
+    </nav>
+
+    <section style="margin: 0 20px 0 20px;">
+        <div class="shop-content">
+  
+          <div class="product-box" style=" text-align: center;">
+              <img src="https://i.pinimg.com/564x/a3/20/23/a3202380233e5a5dcdb402fb7937c8d6.jpg" alt="Product 1" class="product-img">
+              <h2 class="product-title">Product 1</h2>
+              <p class="price">$19.9</p>
+              <button class="AddToBasket add-cart">Add to basket</button>
+          </div>
+      
+          <div class="product-box" style=" text-align: center;">
+              <img src="https://i.pinimg.com/564x/ac/28/ff/ac28ff5726595fb1efb1f24d2a9137c6.jpg" alt="Product 2" class="product-img">
+              <h2 class="product-title">Product 2</h2>
+              <p class="price">$20</p>
+              <button class="AddToBasket add-cart">Add to basket</button>
+          </div>
+  
+          <div class="product-box" style=" text-align: center;">
+              <img src="https://i.pinimg.com/564x/b4/21/7c/b4217c08d971ad6767f4b8d6b78b6ed8.jpg" alt="Product 3" class="product-img">
+              <h2 class="product-title">Product 3</h2>
+              <p class="price">$25</p>
+              <button class="AddToBasket add-cart">Add to basket</button>
+          </div>
+  
+          <div class="product-box" style=" text-align: center;">
+              <img src="https://i.pinimg.com/564x/5e/6d/9a/5e6d9a287be54ba5d494eed4273cdb21.jpg" alt="Product 4" class="product-img">
+              <h2 class="product-title">Product 4</h2>
+              <p class="price">$18</p>
+              <button class="AddToBasket add-cart">Add to basket</button>
+          </div>
+  
+          <div class="product-box" style=" text-align: center;">
+              <img src="https://i.pinimg.com/564x/77/2d/c9/772dc98831da51808c3cb14ab93bf57a.jpg" alt="Product 5" class="product-img">
+              <h2 class="product-title">Product 5</h2>
+              <p class="price">$21.5</p>
+              <button class="AddToBasket add-cart">Add to basket</button>
+          </div>
+  
+          <div class="product-box" style=" text-align: center;">
+              <img src="https://i.pinimg.com/564x/25/37/fa/2537fa8baaf71c933862111f64e474a4.jpg" alt="Product 6" class="product-img">
+              <h2 class="product-title">Product 6</h2>
+              <p class="price">$25.9</p>
+              <button class="AddToBasket add-cart">Add to basket</button>
+          </div>
+  
+          <div class="product-box" style=" text-align: center;">
+              <img src="https://i.pinimg.com/564x/a1/1d/89/a11d896409d600cbbbc54f617986fbd6.jpg" alt="Product 7"class="product-img">
+              <h2 class="product-title">Product 7</h2>
+              <p class="price">$27.9</p>
+              <button class="AddToBasket add-cart">Add to basket</button>
+          </div>
+  
+          <div class="product-box" style=" text-align: center;">
+              <img src="https://i.pinimg.com/564x/f7/21/06/f7210607b1e0624d5cfcced858bc273b.jpg" alt="Product 8" class="product-img">
+              <h2 class="product-title">Product 8</h2>
+              <p class="price">$17.9</p>
+              <button class="AddToBasket add-cart">Add to basket</button>>
+          </div>
+  
+          <div class="product-box" style=" text-align: center;">
+              <img src="https://i.pinimg.com/564x/63/5d/c5/635dc5bf268b17afcebb6afde449f43f.jpg" alt="Product 9" style="margin-bottom: 15px;" class="product-img">
+              <h2 class="product-title">Product 9</h2>
+              <p class="price">$29.9</p>
+              <button class="AddToBasket add-cart">Add to basket</button>
+          </div>
+  
+          <div class="product-box" style=" text-align: center;">
+              <img src="https://i.pinimg.com/564x/0b/3b/f9/0b3bf9c7066436c9422db09c10056f85.jpg" alt="Product 10" class="product-img">
+              <h2 class="product-title">Product 10</h2>
+              <p class="price">$30</p>
+              <button class="AddToBasket add-cart">Add to basket</button>
+          </div>
+  
+          <div class="product-box" style=" text-align: center;">
+              <img src="https://i.pinimg.com/564x/33/fd/7a/33fd7a211950911b52dbb60e7fd419c1.jpg" alt="Product 11" class="product-img">
+              <h2 class="product-title">Product 11</h2>
+              <p class="price">$19.9</p>
+              <button class="AddToBasket add-cart">Add to basket</button>
+          </div>
+  
+          <div class="product-box" style=" text-align: center;">
+              <img src="https://i.pinimg.com/564x/03/4e/78/034e78d10e5ca88ae57f8a8279e55882.jpg" alt="Product 12" class="product-img">
+              <h2 class="product-title">Product 12</h2>
+              <p class="price">$15.9</p>
+              <button class="AddToBasket add-cart">Add to basket</button>
+          </div>
+  
+          <div class="product-box" style=" text-align: center;">
+              <img src="https://i.pinimg.com/564x/34/46/5c/34465cc823874ecaf032bb0d6d3d8955.jpg" alt="Product 13" class="product-img">
+              <h2 class="product-title">Product 13</h2>
+              <p class="price">$19.9</p>
+              <button class="AddToBasket add-cart">Add to basket</button>
+          </div>
+  
+          <div class="product-box" style=" text-align: center;">
+              <img src="https://i.pinimg.com/564x/45/12/2d/45122d4c82d070b872413fba7e82e8b8.jpg" alt="Product 14" class="product-img">
+              <h2 class="product-title">Product 14</h2>
+              <p class="price">$19.9</p>
+              <button class="AddToBasket add-cart">Add to basket</button>
+          </div>
+      
+          <div class="product-box" style=" text-align: center;">
+              <img src="https://i.pinimg.com/564x/01/a7/e9/01a7e914119815b05566ccb32522102b.jpg" alt="Product 15" class="product-img">
+              <h2 class="product-title">Product 15</h2>
+              <p class="price">$19.9</p>
+              <button class="AddToBasket add-cart">Add to basket</button>
+          </div>
+  
+          <div class="product-box" style=" text-align: center;">
+              <img src="https://i.pinimg.com/564x/50/2c/fb/502cfb6b3a01bb465aa15e4ce39c148d.jpg" alt="Product 16" class="product-img">
+              <h2 class="product-title">Product 16</h2>
+              <p class="price">$19.9</p>
+              <button class="AddToBasket add-cart">Add to basket</button>
+          </div>
+
+          <div class="product-box" style=" text-align: center;">
+            <img src="https://i.pinimg.com/564x/b3/d8/90/b3d890927234ac584d2fcde99dc8d500.jpg" alt="Product 17" class="product-img">
+            <h2 class="product-title">Product 17</h2>
+            <p class="price">$19.9</p>
+            <button class="AddToBasket add-cart">Add to basket</button>
+        </div>
+
+        <div class="product-box" style=" text-align: center;">
+            <img src="https://i.pinimg.com/564x/f5/70/97/f5709777827387e8b12f64c6cc4de060.jpg" alt="Product 18" class="product-img">
+            <h2 class="product-title">Product 18</h2>
+            <p class="price">$19.9</p>
+            <button class="AddToBasket add-cart">Add to basket</button>
+        </div>
+
+        <div class="product-box" style=" text-align: center;">
+            <img src="https://i.pinimg.com/564x/21/36/ad/2136ad9f6acf5789c138dec76a825d64.jpg" alt="Product 19" class="product-img">
+            <h2 class="product-title">Product 19</h2>
+            <p class="price">$19.9</p>
+            <button class="AddToBasket add-cart">Add to basket</button>
+        </div>
+    
+        <div class="product-box" style=" text-align: center;">
+            <img src="https://i.pinimg.com/564x/4c/6e/3d/4c6e3d4024d701cd2bb06364cc19651f.jpg" alt="Product 20" class="product-img">
+            <h2 class="product-title">Product 20</h2>
+            <p class="price">$19.9</p>
+            <button class="AddToBasket add-cart">Add to basket</button>
+        </div>
+          
+        </div>
+    </section>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="footer">
+        <div class="footer-sections">
+          <div class="about-us">
+            <h6>About Us</h6>
+            <p>Within our store, you'll discover an extensive array of top-tier makeup brands, carefully curated to meet the diverse preferences of our customers. We take pride in offering these premium products at prices that are exceptionally affordable, ensuring that everyone can indulge in the world of quality beauty without breaking the bank.</p>
+          </div>
+          
+          <div class="contacts" >
+            <h6>Contacts</h6>
+            <p style="margin-bottom: 0px;">jouditafran271@gmail.com<br>Phone: 057382838299</p>
+            <a href="" class="fab fa-whatsapp" style="font-size: 16px;">
+                <span>whatsapp</span>
+            </a>
+          </div>
+          
+          <div class="follow-us">
+            <h6>Follow Us</h6>
+            <p>
+              <li>
+                <a href="" class="fab fa-facebook" title="Facebook"></a>
+                <a href="" class="fab fa-twitter" title="Twitter"></a>
+              </li>
+              <li>
+                <a href="" class="fab fa-instagram" title="Instagram"></a>
+                <a href="" class="fab fa-snapchat" title="Snanchat"></a>
+              </li>
+            </p>
+          </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

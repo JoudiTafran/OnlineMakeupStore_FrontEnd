@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4e627468ad.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="https://i.pinimg.com/564x/f8/34/cc/f834ccc788207ae147ab37d2085f6903.jpg">
+    <title>Makyaj Satiş Sitesi</title>
+</head>
+<body>
+    <header>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    
+        <h1 class="logo"><i>Beauty</i></h1>
+        
+        <div class="menu" id="menu">
+            <a href="Yuz.html">Facial products</a>
+            <a href="Dudak.html">Lip products</a>
+            <a href="Goz.html">Eye products</a>
+            <a href="Paletler.html">Palettes</a>
+        </div>
+
+        <div class="icons">
+          <a href="iletisim.html" class="fa-regular fa-envelope" title="Contact"></a>
+          <a href="Hakkimizda.html" class="fa-solid fa-circle-info" title="About us"></a>
+          <i class="fa-solid fa-cart-shopping" id="cart-icon"></i>
+        </div>
+
+        <div class="cart">
+          <i class="fa-solid fa-xmark" id="close-cart"></i>
+          <h2 class="cart-title">Shopping cart</h2>
+          <div class="cart-content">
+           <!--JS--> 
+          </div>
+          <div class="total">
+            <div class="total-item">Total</div>
+            <div class="total-price">$0</div>
+          </div>
+          <button type="button" class="btn-buy">Buy Now</button>
+        </div>
+    </header> 
+
+    <div class="menuShow" id="menuShow">
+        <a href="Yuz.html">Facial products</a>
+        <a href="Dudak.html">Lip products</a>
+        <a href="Goz.html">Eye products</a>
+        <a href="Paletler.html">Palettes</a>
+    </div>
+
+    <div class="Buybox">
+      <div class="popup-close">x</div>
+      <main class="paymentform"> 
+        <form action="" id="form">
+          
+          <div class="row">
+            
+              <div class="col">
+                  <h3 class="title">Address</h3>
+                  <div class="inputBox">
+                      <span>* full name :</span>
+                      <input type="text" placeholder="..." required>
+                  </div>
+                  <div class="inputBox">
+                      <span>* email :</span>
+                      <input type="email" placeholder="example@example.com" required>
+                  </div>
+                  <div class="inputBox">
+                      <span>* address :</span>
+                      <input type="text" placeholder="locality - street - apartment - door" required>
+                  </div>
+                  <div class="flex">
+                    <div class="inputBox">
+                        <span>* state :</span>
+                        <input type="text" placeholder="..." required>
+                    </div>
+                    <div class="inputBox">
+                        <span>* city :</span>
+                        <input type="text" placeholder="..." required>
+                    </div>
+                  </div>
+                    <div class="inputBox">
+                        <span>zip code :</span>
+                        <input type="number" placeholder="xxx xxx">
+                    </div>  
+              </div>
+  
+              <div class="col">
+                  <h3 class="title">payment</h3>
+                  <div class="inputBox">
+                      <span style="margin-bottom: 20px;">Total price :</span>
+                      <div style="color:rgb(2, 183, 2); margin-bottom: 25px;" class="total-price">$0</div>
+                  </div>
+                  <div class="inputBox">
+                      <span>* name on card :</span>
+                      <input type="text" placeholder="..." required>
+                  </div>
+                  <div class="inputBox">
+                      <span>* credit card number :</span>
+                      <input style="margin-bottom: 10px;" type="number" placeholder="xxxx-xxxx-xxxx-xxxx" required>
+                  </div>
+                  <div class="inputBox">
+                      <span>* exp date :</span>
+                      <input type="number" placeholder="MM/YY" required>
+                  </div>
+                  <div class="inputBox">
+                      <span>* CVV :</span>
+                      <input type="number" placeholder="xxx" min="100" max="999" required> 
+                  </div>
+              </div>
+      
+          </div>
+          <input type="submit" value="Submit payment" class="submit-btn">
+      </form>
+    </main>
+  </div> 
+
+      <div class="image-container">
+        <img src="image.jpg" alt="Background Image">
+        <div class="Text text-center">
+          <b>Welcome to our website</b>
+          <br>
+          <b>Allot of lovely thing are waiting for you</b>  
+        </div>
+        <div class="clock-container">
+          <span id="clock"></span>
+        </div>
+      </div>
+
+      <div class=" centered-heading">
+        <h2 class="mt-5">☙ New Collections ❧</h2>
+         <hr>
+      </div>
+
+      <section style="margin: 4rem 4.5rem 5rem;">
+
+        <div class="shop-content">
+
+          <div class="product-box">
+            <img src="https://i.pinimg.com/564x/1e/43/69/1e436955414606b771d858eb131b1b53.jpg" alt="" class="product-img">
+            <h2 class="product-title">Product1</h2>
+            <span class="price">$25</span>
+            <i class="fa-solid fa-cart-shopping add-cart CartShopping"></i>
+          </div>
+          <div class="product-box">
+            <img src="https://i.pinimg.com/564x/67/f0/19/67f019dd2bb8f8a1979febed86d4cd4e.jpg" alt="" class="product-img">
+            <h2 class="product-title">Product2</h2>
+            <span class="price">$25</span>
+            <i class="fa-solid fa-cart-shopping add-cart CartShopping"></i>
+          </div>
+          <div class="product-box">
+            <img src="https://i.pinimg.com/564x/df/f2/ae/dff2aeaa4fc44128a9c51afc63d9415a.jpg" alt="" class="product-img">
+            <h2 class="product-title">Product3</h2>
+            <span class="price">$25</span>
+            <i class="fa-solid fa-cart-shopping add-cart CartShopping"></i>
+          </div>
+          <div class="product-box">
+            <img src="https://i.pinimg.com/564x/0d/78/e0/0d78e05fd438e4c1893ba2bc874ee8fb.jpg" alt="" class="product-img">
+            <h2 class="product-title">Product4</h2>
+            <span class="price">$25</span>
+            <i class="fa-solid fa-cart-shopping add-cart CartShopping"></i>
+          </div>
+          <div class="product-box">
+            <img src="https://i.pinimg.com/564x/dc/28/23/dc2823e0bb0372811238ee012d17df63.jpg" alt="" class="product-img">
+            <h2 class="product-title">Product5</h2>
+            <span class="price">$25</span>
+            <i class="fa-solid fa-cart-shopping add-cart CartShopping"></i>
+          </div>
+          <div class="product-box">
+            <img src="https://i.pinimg.com/564x/2a/52/6d/2a526dbc479eafaab25a498c9b2ffef0.jpg" alt="" class="product-img">
+            <h2 class="product-title">Product6</h2>
+            <span class="price">$25</span>
+            <i class="fa-solid fa-cart-shopping add-cart CartShopping"></i>
+          </div>
+          <div class="product-box">
+            <img src="https://i.pinimg.com/564x/74/df/65/74df65d478ff508a8631cf341211c88a.jpg" alt="" class="product-img">
+            <h2 class="product-title">Product7</h2>
+            <span class="price">$25</span>
+            <i class="fa-solid fa-cart-shopping add-cart CartShopping"></i>
+          </div>
+          <div class="product-box">
+            <img src="https://i.pinimg.com/564x/e4/45/54/e44554596ce80573e99054a4b3912e26.jpg" alt="" class="product-img">
+            <h2 class="product-title">Product8</h2>
+            <span class="price">$25</span>
+            <i class="fa-solid fa-cart-shopping add-cart CartShopping"></i>
+          </div>
+
+        </div>
+      </section>
+
+      <hr>
+
+      <div class="container">
+        <div class="row border py-3 mx-3 Gift">
+          <div class="col-lg-5 col-12 embed-responsive embed-responsive-4by3">
+            <video controls loop autoplay muted>
+                <source src="video.mp4" type="video/mp4">
+                <source src="video.webm" type="video/webm">
+                <source src="video.ogg" type="video/ogg">
+            </video>
+          </div>
+          <div class="col-lg-7 col-12 text-center Survey">
+            <h4>☙ An amazing <b>gift</b> for you ❧</h4>
+            <p>Do you want to have this amazing make up bag?</p>
+            <p>Your participation in this survey is of the utmost importance and if your answers <b>exceed the 80%</b> threshold, you will be considered the lucky recipient of this wonderful bag, thus guaranteeing yourself this coveted item as a token of appreciation for your participation in this survey.</p>
+            <h5 style="text-decoration: underline;">The bag contain:</h5>
+            <ul style="list-style: none;">
+              <li>
+                <span>• Foundation cream</span>
+                <pre style="display: inline;"> </pre>
+                <span>• Concealer</span>
+              </li>
+              <li>
+                <span>• Liquid contour</span>
+                <pre style="display: inline;"> </pre>
+                <span>• Mascara</span>
+              </li>
+              <li>
+                <span>• Eye shadow palette</span>
+                <pre style="display: inline;"> </pre>
+                <span>• Blush powder</span> 
+              </li>
+              <li>
+                <span>• lip gloss</span>
+                <pre style="display: inline;"> </pre>
+                <span>• lipstick</span>
+              </li>
+            </ul>
+            <a href="Anket.html" class="survey" style="text-decoration: none; color: rgb(251, 251, 251);">Go to survey</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+            <div class="footer-sections">
+              <div class="about-us">
+                <h6>About Us</h6>
+                <p>Within our store, you'll discover an extensive array of top-tier makeup brands, carefully curated to meet the diverse preferences of our customers. We take pride in offering these premium products at prices that are exceptionally affordable, ensuring that everyone can indulge in the world of quality beauty without breaking the bank.</p>
+              </div>
+              
+              <div class="contacts" >
+                <h6>Contacts</h6>
+                <p style="margin-bottom: 0px;">jouditafran271@gmail.com<br>Phone: 057382838299</p>
+                <a href="" class="fab fa-whatsapp" style="font-size: 16px;">
+                    <span>whatsapp</span>
+                </a>
+              </div>
+              
+              <div class="follow-us">
+                <h6>Follow Us</h6>
+                <p>
+                  <li>
+                    <a href="" class="fab fa-facebook" title="Facebook"></a>
+                    <a href="" class="fab fa-twitter" title="Twitter"></a>
+                  </li>
+                  <li>
+                    <a href="" class="fab fa-instagram" title="Instagram"></a>
+                    <a href="" class="fab fa-snapchat" title="Snanchat"></a>
+                  </li>
+                </p>
+              </div>
+            </div>
+      </div>
+    
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
